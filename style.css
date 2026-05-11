@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#header img:first-child {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#header > p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+#cards {
+    display: flex;
+    gap: 20px;
+}
+
+.headerPic1, .headerPic2 {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: #333;
+}
+
+.headerPic1 input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+#searchBtn {
+    background: #4caf8a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.headerPic2 {
+    align-items: center;
+}
+
+.headerPic2 img {
+    width: 60px;
+}
+
+.headerPic2 hr {
+    width: 100%;
+    border: 1px solid #4caf8a;
+}
+
+.headerPic2 p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
