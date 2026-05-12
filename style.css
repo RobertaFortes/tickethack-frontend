@@ -8,7 +8,6 @@ body {
     font-family: sans-serif;
 }
 
-
 #header {
     width: 100%;
     height: 100vh;
@@ -18,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 15px;
     color: white;
     text-align: center;
 }
@@ -35,26 +34,44 @@ body {
 
 #cards {
     display: flex;
-    gap: 20px;
+    gap: 90px;
 }
 
 .headerPic1, .headerPic2 {
     background: white;
     border-radius: 8px;
     padding: 24px;
-    width: 235px;
+    width: 240px;      
+    height: 270px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0;
     color: #333;
 }
 
 .headerPic1 input {
     border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    font-size: 0.9rem;
+    background-color: #f0f0f0;
+    padding: 8px 8px;
+    font-size: 0.6.5rem;
     outline: none;
+    width: 100%;
+    border-radius: 0;
+}
+
+.headerPic1 input:nth-child(1) {
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerPic1 input:nth-child(2) {
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+}
+
+.headerPic1 input:nth-child(3) {
+    border-radius: 4px;
+    margin-top: 30px;
 }
 
 #searchBtn {
@@ -64,24 +81,31 @@ body {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.70rem;
+    margin-top: 60px;
 }
 
 .headerPic2 {
     align-items: center;
+    justify-content: center;
 }
 
 .headerPic2 img {
-    width: 60px;
+    width: 90px;
+    
+
 }
 
 .headerPic2 hr {
     width: 100%;
     border: 1px solid #4caf8a;
+    margin-top: 35px;
+
 }
 
 .headerPic2 p {
     font-size: 0.85rem;
     text-align: center;
+    margin-top: 30px;
+    
 }
-
