@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickethack</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="header">
+    <header id="header"></header>
+    <main id="container-home">
         <h1>Explore the World effortlessly by train!</h1>
         <p>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack</p>
 
         <div id="cards">
-            <div class="headerPic1">
+            <div class="card1">
                 <input type="text" placeholder="Departure" />
                 <input type="text" placeholder="Arrival" />
                 <input type="date" />
-                <button id="searchBtn">Search</button>
+                <button id="searchBtn" class="button">Search</button>
             </div>
 
-            <div class="headerPic2">
+            <div class="card2">
                 <img src="images/train.png" />
                 <hr />
                 <p>It's time to book your future trip</p>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
