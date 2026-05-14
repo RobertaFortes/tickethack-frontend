@@ -6,11 +6,12 @@ searchButton.addEventListener('click', () => {
   const date = document.querySelector('#dates').value;
 
   // Appel au backend
-  fetch(`http://localhost:3000/trips?${departure}&${arrival}&${date}`)
+  fetch(`http://localhost:3000/trips?departure=${encodeURIComponent(departure)}&arrival=${encodeURIComponent(arrival)}&date=${encodeURIComponent(date)}`)
     .then((res) => res.json())
     .then((data) => {
-      displayTrips(data.trips); // on affiche les résultats dans la card de droite
-    });
+      displayTrips(data.trips);
+    })
+    .catch((err) => console.error('Fetch error:', err));
 });
 
 function displayTrips(trips) {
