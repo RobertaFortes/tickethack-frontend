@@ -23,11 +23,23 @@ function displayTrips(trips) {
   trips.forEach((trip) => {
     rightCard.innerHTML += `
       <div class="trip">
-        <p>${trip.from} → ${trip.to}</p>
+        <p>${trip.departure} → ${trip.arrival}</p>
         <p>${trip.date}</p>
         <p>${trip.price}€</p>
         <button onclick="addToCart('${trip._id}')">Add to cart</button>
       </div>
     `;
   });
+  function addToCart(tripId) {
+fetch('http://localhost:3000/bookings', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ tripId }),
+})
+.then((res) => res.json())
+.then((data) => {
+console.log('Booking confirmed:', data);
+})
+.catch((err) => console.error('Booking error:', err));
+}
 }

@@ -32,6 +32,34 @@ body {
     margin-bottom: 30px;
 }
 
+#container-cart {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/empty_shopping_cart.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+ 
+}
+
+.cart-page header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+#empty-message {
+    color: rgb(22, 21, 21);
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
 #cards {
     display: flex;
     gap: 90px;
