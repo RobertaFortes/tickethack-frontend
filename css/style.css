@@ -23,7 +23,7 @@ body {
 }
 
 #container-home h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -121,16 +121,19 @@ body {
 .card2 {
     align-items: center;
     justify-content: center;
+    overflow: scroll
 }
 
 .card2 img {
     width: 90px;
+    
 }
 
 .card2 hr {
     width: 100%;
     border: 1px solid #4caf8a;
     margin-top: 35px;
+    
 
 }
 
@@ -138,6 +141,8 @@ body {
     font-size: 0.85rem;
     text-align: center;
     margin-top: 30px;
+    
+    
     
 }
 
